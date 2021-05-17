@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className="site-wrap">
         <aside className="panel">
-          <h1>How to center a div</h1>
+          <h1>How to center a div.</h1>
           <p>
             All jokes aside — using display: flex; on the parent div will allow
             you manipulate how items inside of it can be positioned.
@@ -27,7 +27,9 @@ export default function Home() {
         </aside>
 
         <main className="scene">
-          <div className="shape"></div>
+          <div className="shape">
+            <p>{"<div>"}</p>
+          </div>
         </main>
       </div>
     </>
