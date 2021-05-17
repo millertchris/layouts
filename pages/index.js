@@ -1,11 +1,7 @@
 import Head from "next/head";
+import ButtonGroup from "../components/buttonGroup";
 
 export default function Home() {
-  function justifyContent(e) {
-    var position = e.target.getAttribute("data-style");
-    document.querySelector(".scene").style.justifyContent = position;
-  }
-
   function alignItems(e) {
     var position = e.target.getAttribute("data-style");
     document.querySelector(".scene").style.alignItems = position;
@@ -26,47 +22,8 @@ export default function Home() {
             for the child elements.
           </p>
 
-          <div className="btn-group horizontal">
-            <h2>justify-content</h2>
-            <button
-              className="btn"
-              data-style="flex-start"
-              onClick={justifyContent}
-            >
-              flex-start
-            </button>
-            <button
-              className="btn"
-              data-style="center"
-              onClick={justifyContent}
-            >
-              center
-            </button>
-            <button
-              className="btn"
-              data-style="flex-end"
-              onClick={justifyContent}
-            >
-              flex-end
-            </button>
-          </div>
-
-          <div className="btn-group vertical">
-            <h2>align-items</h2>
-            <button
-              className="btn"
-              data-style="flex-start"
-              onClick={alignItems}
-            >
-              flex-start
-            </button>
-            <button className="btn" data-style="center" onClick={alignItems}>
-              center
-            </button>
-            <button className="btn" data-style="flex-end" onClick={alignItems}>
-              flex-end
-            </button>
-          </div>
+          <ButtonGroup title="justify-content" flexAlign="justifyContent" />
+          <ButtonGroup title="align-items" flexAlign="alignItems" />
         </aside>
 
         <main className="scene">
