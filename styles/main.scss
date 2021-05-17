@@ -1,0 +1,18 @@
+.site-wrap {
+  display: flex;
+}
+.panel {
+  width: 100%;
+  max-width: 320px;
+}
+.scene {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  border: 1px solid #000;
+  .shape {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+  }
+}
