@@ -15,47 +15,56 @@ export default function Home() {
     <>
       <div className="site-wrap">
         <aside className="panel">
-          <h1>Controls</h1>
+          <h1>How to center a div</h1>
+          <p>
+            All jokes aside — using display: flex; on the parent div will allow
+            you manipulate how items inside of it can be positioned.
+          </p>
+
+          <p>
+            Then — using the properties below you are able to set the position
+            for the child elements.
+          </p>
 
           <div className="btn-group horizontal">
-            <h2>Horizontal</h2>
+            <h2>justify-content</h2>
             <button
               className="btn"
               data-style="flex-start"
               onClick={justifyContent}
             >
-              Left
+              flex-start
             </button>
             <button
               className="btn"
               data-style="center"
               onClick={justifyContent}
             >
-              Center
+              center
             </button>
             <button
               className="btn"
               data-style="flex-end"
               onClick={justifyContent}
             >
-              Right
+              flex-end
             </button>
           </div>
 
           <div className="btn-group vertical">
-            <h2>Horizontal</h2>
+            <h2>align-items</h2>
             <button
               className="btn"
               data-style="flex-start"
               onClick={alignItems}
             >
-              Left
+              flex-start
             </button>
             <button className="btn" data-style="center" onClick={alignItems}>
-              Center
+              center
             </button>
             <button className="btn" data-style="flex-end" onClick={alignItems}>
-              Right
+              flex-end
             </button>
           </div>
         </aside>
