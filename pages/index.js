@@ -2,11 +2,6 @@ import Head from "next/head";
 import ButtonGroup from "../components/buttonGroup";
 
 export default function Home() {
-  function alignItems(e) {
-    var position = e.target.getAttribute("data-style");
-    document.querySelector(".scene").style.alignItems = position;
-  }
-
   return (
     <>
       <div className="site-wrap">
